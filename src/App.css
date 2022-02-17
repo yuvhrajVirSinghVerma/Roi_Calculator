@@ -98,7 +98,8 @@
 .timeframe_btn_container,.tier_btn_container{
   display: flex;
   justify-content: space-around;
-  width: 46%;
+  width: 80%;
+  margin-left: 23px;
 }
 .output{
   margin: 56px 0 0 0;
@@ -183,7 +184,7 @@ input:checked + .slider:before {
   justify-content: space-between;
   align-items: center;
   width: 71%;
-  margin: 37px 0 37px 0px;
+  margin: 37px 0 37px 31px;
 }
 .apy_title{
   font-size: 1.5rem;
@@ -198,4 +199,51 @@ input:checked + .slider:before {
 .Chart{
   width: 500px;
   height: 500px;
+}
+/* overriding some styling  */
+.MuiDialog-paperWidthSm{
+  width: 50% !important;
+  max-width: inherit !important;
+  height: 90% !important;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+body{
+  background: hsl(227, 10%, 10%);
+  
+}
+
+#btn{
+  background-color: none;
+  color: red;
+  border: 2px solid red !important;
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 14px 8px 14px 8px;
+}
+#btn:hover
+ {
+  animation: btn 2s !important;
+  box-shadow: 0 0 0 2em rgba(rgb(255, 255, 255),0)!important;
+}
+
+@keyframes btn {
+	0% {
+		box-shadow: 0 0 0 0 rgb(246, 7, 7);
+	}
+	40% {
+		box-shadow: 0 0 0 50px rgba(253, 8, 53, 0);
+	}
+	80% {
+		box-shadow: 0 0 0 50px rgba(12, 9, 0, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+	}
 }
