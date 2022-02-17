@@ -1,6 +1,6 @@
 import './App.css';
 import {useState,useEffect} from 'react'
-
+import {CustomizedDialogs} from './popup.js'
 
 function App() {
   
@@ -71,8 +71,15 @@ function App() {
 
   }
 
+
+
+
+  
+
   return (
-    <div>
+    <div className='container'>
+      <CustomizedDialogs>
+      {/* ====================================================== */}
 
        <div className='header'>
           <h1 className='roi_title'>ROI CALCULATOR</h1>
@@ -178,8 +185,10 @@ function App() {
        <div className='output'>
           <input className='output_inp' type='number' readOnly value={Result}/>
        </div>
+       </CustomizedDialogs>
 
     </div>
+
   );
 }
 
